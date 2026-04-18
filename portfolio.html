@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assiba | Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwindcss CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  </head>
+
+  <body class="bg-[#0F172A] text-[#F1F5F9] font-['Courier_New']" >
+    <!-- Dark navy background : bg-[#0F172A] -->
+
+    <!-- Header section : nav bar with Home, Projects, Contact -->
+   <header class="sticky top-0 z-50 ">
+        <nav class="bg-[#0F172A] border-b border-slate-800 py-2 md:py-4 px-[5%] lg:px-[10%] transition-colors duration-500 hover:bg-[#1e293b] shadow-lg">
+            <!-- Responsive grid for navigation bar -->
+            <div class="grid grid-cols-1 md:grid-cols-[auto_1fr] lg:grid-cols-[1fr_auto] items-center gap-2 ">
+            
+            <!-- Name  -->
+            <div class="text-lg sm:text-xl font-bold text-[#38BDF8] tracking-tighter text-center md:text-left whitespace-nowrap">
+                EUNICE A. A. CODO
+            </div>
+
+            <!-- Navigation links -->
+            <div class="flex justify-center md:justify-end overflow-x-auto no-scrollbar">
+                <ul class="grid grid-cols-4 gap-2 list-none min-w-[340px] md:min-w-[400px] tracking-wide">
+                <li>
+                    <a href="#home" class="w-full text-center whitespace-nowrap px-2 py-2 rounded-md text-[#94A3B8] text-[14px]  md:text-sm  transition-all duration-300 hover:bg-[#38BDF8] hover:text-[#0F172A] hover:shadow-[0_0_15px_#38BDF8] inline-block border border-transparent hover:border-[#38BDF8]">
+                    Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" class="w-full text-center whitespace-nowrap px-2 py-2 rounded-md text-[#94A3B8] text-[14px] md:text-sm transition-all duration-300 hover:bg-[#38BDF8] hover:text-[#0F172A] hover:shadow-[0_0_15px_#38BDF8] inline-block border border-transparent hover:border-[#38BDF8]">
+                    Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" class="w-full text-center whitespace-nowrap px-2 py-2 rounded-md text-[#94A3B8] text-[14px] md:text-sm transition-all duration-300 hover:bg-[#38BDF8] hover:text-[#0F172A] hover:shadow-[0_0_15px_#38BDF8] inline-block border border-transparent hover:border-[#38BDF8]">
+                    Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="w-full text-center whitespace-nowrap px-2 py-2 rounded-md text-[#94A3B8] text-[14px] md:text-sm transition-all duration-300 hover:bg-[#38BDF8] hover:text-[#0F172A] hover:shadow-[0_0_15px_#38BDF8] inline-block border border-transparent hover:border-[#38BDF8]">
+                    Contact
+                    </a>
+                </li>
+                </ul>
+            </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- Hero-->
+
+        <section id="hero" class="relative py-20 h-full w-full flex items-center  overflow-hidden ">
+            <!-- Hero Background image -->
+            <div class="absolute inset-0 z-0">
+                <img src="./images/portfolio-hero-bg.jpg" 
+                    alt="Hero Background" 
+                    class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#0F172A]/60 via-[#0F172A]/80 to-[#0F172A]"></div>
+            </div>
+
+            <!-- Hero Content (profile) -->
+            <div class="relative z-10 px-[5%] lg:px-[15%] text-left w-full ">
+                <!-- Title : Glowing dot + Profile -->
+                <div class="mb-6 flex items-center justify-start gap-2">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#38BDF8] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-[#38BDF8]"></span>
+                    </span>
+                    <span class="text-[#38BDF8] text-sm font-bold tracking-[0.2em] uppercase">
+                    Profile 
+                    </span>
+                </div>
+                <!-- Name (double colors) -->
+                <h1 class="text-base md:text-xl lg:text-5xl font-bold text-[#F1F5F9] leading-tight uppercase tracking-[0.15em] md:tracking-[0.25em]">
+                HI, I AM <span class="text-[#38BDF8]">EUNICE</span>
+                </h1>
+                <!-- Job Title -->
+                <h2 class="mt-4 text-[14px] md:text-[16px] lg:text-xl font-bold text-[#94A3B8] uppercase tracking-[0.3em] md:tracking-[0.5em] opacity-90">
+                TECHNICAL SUPPORT ENGINEER
+                </h2>
+
+                <!-- Description/About -->
+                <p class="mt-4  pl-6 text-[#94A3B8] text-[14px] md:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed border-l-2 border-[#38BDF8]/30">
+                    System Administrator and Software Engineer with a foundation in cybersecurity. <br>
+                    I work with telecom systems and cloud environments, focusing on reliability, scalability, and security. <br>
+                    I’m driven by curiosity and a constant desire to build better, stronger systems.
+                </p>
+
+                <!-- CTA Buttons (flex) -->
+                <div class="mt-10 flex flex-col sm:flex-row  gap-4 ">
+                    <a href="#projects" class="px-8 py-4 bg-[#38BDF8] text-[#0F172A] text-[14px] md:text-[16px] lg:text-xl font-bold tracking-[0.1em] md:tracking-[0.3em]  rounded-md hover:shadow-[0_0_20px_#38BDF8] transition-all duration-300 text-center">
+                        VIEW PROJECTS
+                    </a>
+                    <a href="#contact" class="px-8 py-4 border border-[#38BDF8] text-[#38BDF8] text-[14px] md:text-[16px] lg:text-xl font-bold tracking-[0.1em] md:tracking-[0.3em] rounded-md hover:bg-[#38BDF8]/10 transition-all duration-300 text-center">
+                        CONTACT ME
+                    </a>
+                </div>
+
+            </div>
+            <!-- Decorative fading line -->
+            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#38BDF8] to-transparent opacity-50"></div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="target-section relative pt-16 pb-10 mb-2 px-[5%] lg:px-[15%]">
+            <!-- Intro -->
+            <div class="my-16 flex items-center gap-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#F1F5F9] uppercase tracking-widest">
+                    <span class="text-[#38BDF8]">My_</span>SKILLS
+                </h2>
+                <!-- Decorative line -->
+                <div class="h-[1px] flex-1 bg-slate-800"></div>
+            </div>
+            <!-- Skills boxes using flex -->
+            <div class="flex flex-wrap gap-4">
+                <!-- skill box -->
+                <div class="px-3 py-2- md:px-5 md:py-3 bg-[#1E293B] border border-slate-700 rounded-md flex items-center gap-3 transition-all duration-300 hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 group">
+                    <i class="fa-brands fa-html5 text-[#38BDF8]"></i>
+                    <span class="text-[#F1F5F9] text-xs font-bold uppercase tracking-[0.2em]">HTML5</span>
+                </div>
+                <!-- end of skill box -->
+                
+                <div class="px-3 py-2 md:px-5 md:py-3 bg-[#1E293B] border border-slate-700 rounded-md flex items-center gap-3 transition-all duration-300 hover:border-[#38BDF8] hover:bg-[#38BDF8]/5  group">
+                    <i class="fa-brands fa-css3-alt text-[#38BDF8]"></i>
+                    <span class="text-[#F1F5F9] text-xs font-bold uppercase tracking-wider">CSS3</span>
+                </div>
+
+                <div class="px-3 py-2 md:px-5 md:py-3   bg-[#1E293B] border border-slate-700 rounded-md flex items-center gap-3 transition-all duration-300 hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 group">
+                    <i class="fa-brands fa-js text-[#38BDF8]"></i>
+                    <span class="text-[#F1F5F9] text-xs font-bold uppercase tracking-wider">JavaScript</span>
+                </div>
+
+                <div class="px-3 py-2 md:px-5 md:py-3 bg-[#1E293B] border border-slate-700 rounded-md flex items-center gap-3 transition-all duration-300 hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 group">
+                    <i class="fa-solid fa-shield-halved text-[#38BDF8]"></i>
+                    <span class="text-[#F1F5F9] text-xs font-bold uppercase tracking-wider">Cybersecurity</span>
+                </div>
+
+                <div class="px-3 py-2 md:px-5 md:py-3 bg-[#1E293B] border border-slate-700 rounded-md flex items-center gap-3 transition-all duration-300 hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 group">
+                    <i class="fa-solid fa-server text-[#38BDF8]"></i>
+                    <span class="text-[#F1F5F9] text-xs font-bold uppercase tracking-wider">Technical Support</span>
+                </div>
+
+                <div class="px-3 py-2 md:px-5 md:py-3 bg-[#1E293B] border border-slate-700 rounded-md flex items-center gap-3 transition-all duration-300 hover:border-[#38BDF8] hover:bg-[#38BDF8]/5 group">
+                    <i class="fa-solid fa-terminal text-[#38BDF8]"></i>
+                    <span class="text-[#F1F5F9] text-xs font-bold uppercase tracking-wider">Git/GitHub</span>
+                </div>
+
+            </div>
+
+            <!-- Decorative fading line -->
+            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#38BDF8] to-transparent opacity-50"></div>
+
+        </section>  
+        
+        
+
+        <!-- Projects -->
+        <section id="projects" class="target-section relative pt-20 pb-16 px-[5%] lg:px-[15%] ']">
+            <!-- Intro -->
+            <div class="mb-16 border-l-4 border-[#38BDF8] pl-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#F1F5F9] uppercase tracking-widest">
+                    <span class="text-[#38BDF8]">MY_</span>PROJECTS
+                </h2>
+                <p class="text-[#94A3B8] mt-2 text-sm italic tracking-tighter">Software Engineering, Cybersecurity, Delivery & Maintenance, ...</p>
+            </div>
+
+            <div class="flex flex-col gap-12">
+
+                <!-- Project 1  -->
+                    <!-- on small screens flex-col / on big screens flex-row -->
+                    <div class="group flex flex-col md:flex-row-reverse bg-[#1E293B]/40 border border-slate-800 rounded-xl overflow-hidden transition-all duration-500 hover:border-[#38BDF8]">
+                        <!-- container for project image + green dark glow background effect  -->
+                        <div class="relative w-full md:w-2/5 h-48 md:h-auto bg-[#0F172A] flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-l border-slate-800 group">
+                            <div class="absolute inset-0 z-0 opacity-20 transition-opacity duration-500 group-hover:opacity-40">
+                                <div class="absolute inset-0 bg-[#38BDF8] blur-[40px] scale-110"></div>
+                            </div>
+                            <!-- project image -->
+                            <img src="./images/portfolio-html.png"  
+                                alt="Project Image" 
+                                class="relative z-10 w-full h-full object-contain p-4  transition-transform duration-700 group-hover:scale-105">
+                            <!-- overlay -->
+                            <div class="absolute inset-0 z-[5] bg-gradient-to-t from-[#0F172A] via-transparent to-[#0F172A] opacity-50"></div>
+                        </div>     
+                        
+                        <!-- project information row -->
+                        <div class="w-full md:w-3/5 p-5 md:p-8 flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-[10px] text-[#38BDF8] border border-[#38BDF8]/50 px-2 py-0.5 rounded font-bold uppercase">SOFTWARE_ENGINEERING</span>
+                                <span class="text-[10px] text-[#94A3B8] font-bold uppercase tracking-widest">HTML5</span>
+                            </div>
+                            <h3 class="text-xs md:text-base font-semibold text-[#F1F5F9] mb-2 uppercase tracking-tight md:tracking-[0.1em] ">
+                                Personal Portfolio with HTML
+                            </h3>
+                            <p class="text-[11px] md:text-xs text-[#94A3B8] mb-5 leading-relaxed">
+                                Structural build focusing on semantic architecture and clean data organization.
+                                Structural build focusing on semantic architecture and clean data organization.
+                                Structural build focusing on semantic architecture and clean data organization.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="inline-block py-1 text-[#38BDF8] font-bold uppercase text-xs tracking-widest hover:translate-x-2 transition-transform duration-300">
+                                VIEW GITHUB PAGE <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                <!-- end Project 1 -->
+
+
+
+                    <!-- Project 2  -->
+                    <!-- on small screens flex-col / on big screens flex-row  -->
+                    <div class="group flex flex-col md:flex-row bg-[#1E293B]/40 border border-slate-800 rounded-xl overflow-hidden transition-all duration-500 hover:border-[#38BDF8]">
+
+                        <!-- container for project image + green dark glow background effect  -->
+                        <div class="relative w-full md:w-2/5 h-48 md:h-auto bg-[#0F172A] flex items-center justify-center overflow-hidden border-b md:border-b-0 md:border-r border-slate-800 group">
+                            <div class="absolute inset-0 z-0 opacity-20 transition-opacity duration-500 group-hover:opacity-40">
+                                <div class="absolute inset-0 bg-[#38BDF8] blur-[40px] scale-110"></div>
+                            </div>
+                            <!-- project image -->
+                            <img src="./images/portfolio-html.png"  
+                                alt="Project Image" 
+                                class="relative z-10 w-full h-full object-contain p-4  transition-transform duration-700 group-hover:scale-105">
+                            <!-- overlay -->
+                            <div class="absolute inset-0 z-[5] bg-gradient-to-t from-[#0F172A] via-transparent to-[#0F172A] opacity-50"></div>
+                        </div>   
+
+                         <!-- project information row -->
+                        <div class="w-full md:w-3/5 p-5 md:p-8 flex flex-col justify-center">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="text-[10px] text-[#38BDF8] border border-[#38BDF8]/50 px-2 py-0.5 rounded font-bold uppercase">SOFTWARE_ENGINEERING</span>
+                                <span class="text-[10px] text-[#94A3B8] font-bold uppercase tracking-widest">HTML5</span>
+                            </div>
+                            <h3 class="text-xs md:text-base font-semibold text-[#F1F5F9] mb-2 uppercase tracking-tight md:tracking-[0.1em] ">
+                                Personal Portfolio with HTML
+                            </h3>
+                            <p class="text-[11px] md:text-xs text-[#94A3B8] mb-5 leading-relaxed">
+                                Structural build focusing on semantic architecture and clean data organization.
+                                Structural build focusing on semantic architecture and clean data organization.
+                                Structural build focusing on semantic architecture and clean data organization.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="inline-block py-1 text-[#38BDF8] font-bold uppercase text-xs tracking-widest hover:translate-x-2 transition-transform duration-300">
+                                VIEW GITHUB PAGE <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                <!-- end Project 2 -->
+
+            </div>
+
+            <!-- Decorative fading line -->
+            <div class="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#38BDF8] to-transparent opacity-50"></div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="target-section py-20 px-[5%] lg:px-[15%] ">
+            <!-- Intro -->
+            <div class="mb-12 border-l-4 border-[#38BDF8] pl-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#F1F5F9] uppercase tracking-widest">
+                    <span class="text-[#38BDF8]">CONTACT</span>_FORM
+                </h2>
+                <p class="text-[#94A3B8] mt-2 text-sm  tracking-tighter">Leave a message...</p>
+            </div>
+            <!--  -->
+            <div class="max-w-3xl mx-auto md:mx-5 bg-[#1E293B]/30 border border-slate-800 p-6 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden">
+                <!-- Decorative border -->
+                <!-- <div class="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-[#38BDF8]/20 rounded-tr-2xl"></div> -->
+                <!-- form -->
+                <form action="#" method="POST" class="space-y-6">
+                    <!-- Name and Email input responsive grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Name -->
+                        <div class="flex flex-col gap-2">
+                            <label for="name" class="text-[10px] md:text-base text-[#38BDF8] font-bold uppercase tracking-[0.2em]">Name:</label>
+                            <input type="text" id="name" name="name" required
+                                placeholder="Enter Name..."
+                                class="bg-[#0F172A] border border-slate-700 rounded-md px-4 py-2 text-[#F1F5F9] placeholder:text-slate-600 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] transition-all duration-300">
+                        </div>
+                        <!-- Email -->
+                        <div class="flex flex-col gap-2">
+                            <label for="email" class="text-[10px] md:text-base text-[#38BDF8] font-bold uppercase tracking-[0.2em]">Email:</label>
+                            <input type="email" id="email" name="email" required
+                                placeholder="email@example.com"
+                                class="bg-[#0F172A] border border-slate-700 rounded-md px-4 py-2 text-[#F1F5F9] placeholder:text-slate-600 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] transition-all duration-300">
+                        </div>
+                    </div>
+                    <!-- Message -->
+                    <div class="flex flex-col gap-2">
+                        <label for="message" class="text-[10px] md:text-base text-[#38BDF8] font-bold uppercase tracking-[0.2em]">Message:</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Type your message here..."
+                            class="bg-[#0F172A] border border-slate-700 rounded-md px-4 py-2 text-[#F1F5F9] placeholder:text-slate-600 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] transition-all duration-300 resize-none"></textarea>
+                    </div>
+                    <!-- Submit Button + hover glow effect-->
+                    <div class="pt-4">
+                        <button type="submit" 
+                            class="w-full md:w-auto px-10 py-4 bg-[#38BDF8] text-[#0F172A] font-bold uppercase tracking-widest rounded-md hover:shadow-[0_0_25px_#38BDF8] hover:-translate-y-1 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3">
+                            SEND MESSAGE
+                            <i class="fa-solid fa-paper-plane text-sm"></i>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    
+    </main>
+
+    <!-- Footer -->
+    <!-- Design a footer with social media icons and copyright information -->
+    <!-- Keep same dark navy bg-[#0F172A] / add a separation line  -->
+    <footer class="bg-[#0F172A] border-t border-slate-800 py-10 px-[5%] lg:px-[10%] ">
+        
+        <!--  flex-row on medium/bigger screens /  -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+            
+            <!-- Copyright information -->
+            <div class="text-center md:text-left">
+                <p class="text-[#94A3B8] text-xs uppercase tracking-widest">
+                    &copy; 2026 <span class="text-[#38BDF8] font-bold">EUNICE A. A. CODO</span>
+                </p>
+                <p class="text-[10px] text-slate-600 uppercase mt-1">
+                    All rights reserved | Portfolio built with Tailwind CSS
+                </p>
+            </div>
+
+            <!-- Div for icons + links +  transform -->
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/asurafy" target="_blank" 
+                class="text-[#94A3B8] text-xl transition-all duration-300 hover:text-[#38BDF8] hover:-translate-y-1">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/eunice-codo/" target="_blank" 
+                class="text-[#94A3B8] text-xl transition-all duration-300 hover:text-[#38BDF8] hover:-translate-y-1">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/eunicecodo" target="_blank" 
+                class="text-[#94A3B8] text-xl transition-all duration-300 hover:text-[#38BDF8] hover:-translate-y-1">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="mailto:eunicecodo23@gmail.com" 
+                class="text-[#94A3B8] text-xl transition-all duration-300 hover:text-[#38BDF8] hover:-translate-y-1">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+        </div>
+        <!-- Decorative fading line  -->
+        <div class="mt-10 h-[1px] w-full bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
+    </footer>
+
+  </body>
+</html>
